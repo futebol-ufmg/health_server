@@ -1,0 +1,75 @@
+#Lines starting with a hashtag are comments
+# Machines information
+
+
+#HARDWARE       AVAILABLE IMAGES                    USB
+usrp            gnuradio,plain,lavras,lavras2,ufv,openlte,lte,lte_version2,lte_version3       2500:0020
+#usrp            gnuradio,plain,lavras,lavras2,ufv,openlte,lte,lte_version2,lte_version3       2500:0020
+telosb          machine                              x 
+wifi            ethanol,ubuntu16,ubuntu14,srslte                                x
+#raspberry       raspberry                           x
+--------------------------------------------------------------------------------
+#NODES          HARDWARE        DEFAULT IMAGES      RAW
+11,12-18        usrp            gnuradio            False
+60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76          telosb         machine          True
+# 12              usrp            gnuradio
+# 13              usrp            gnuradio
+# 14              usrp            gnuradio
+# 15              usrp            gnuradio
+# 16              usrp            gnuradio
+# 17              usrp            gnuradio
+# 18              usrp            gnuradio
+
+#25-28        telosb          telosb              False
+# 22              telosb          telosb
+# 23              telosb          telosb
+# 24              telosb          telosb
+# 25              telosb          telosb
+# 26              telosb          telosb
+# 27              telosb          telosb
+# 28              telosb          telosb
+#39         raspberry      raspberry           True
+# 32              x               raspberry
+# 33              x               raspberry
+# 34              x               raspberry
+# 35              x               raspberry
+# 36              x               raspberry
+# 37              x               raspberry
+# 38              x               raspberry
+# 39              x               raspberry
+# 40              x               raspberry
+# 41              x               raspberry
+# 42              x               raspberry
+# 43              x               raspberry
+# 44              x               raspberry
+# 45              x               raspberry
+# 46              x               raspberry
+
+51,52-58          wifi                   ubuntu14             True
+--------------------------------------------------------------------------------
+#MACHINE NAME       IP          USER        NODES
+#VMSERVER       192.168.0.1
+rack1           192.168.0.11    futebol     11,51,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76
+rack2          192.168.0.12    futebol     12,52
+rack3          192.168.0.13    futebol     13,53
+rack4           192.168.0.14    futebol     14,54
+rack5           192.168.0.15    futebol     15,55
+rack6           192.168.0.16    futebol     16,56
+rack7           192.168.0.17    futebol     17,57
+rack8           192.168.0.18    futebol     18,58
+#rasp1           192.168.0.31    pi          31
+#rasp2          192.168.0.32    pi          32
+#rasp3           192.168.0.33    pi          33
+#rasp4           192.168.0.34    pi          34
+#rasp5           192.168.0.35    pi          35
+#rasp6          192.168.0.36    pi          36
+#rasp7          192.168.0.37    pi          37
+#rasp8          192.168.0.38    pi          38
+#rasp9          192.168.0.39    pi          39
+#rasp10         192.168.0.40    pi          40
+#rasp11         192.168.0.41    pi          41
+#rasp12         192.168.0.42    pi          42
+#rasp13         192.168.0.43    pi          43
+#rasp14         192.168.0.44    pi          44
+#rasp15         192.168.0.45    pi          45
+#rasp16         192.168.0.46    pi          46:
