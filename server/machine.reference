@@ -1,71 +1,35 @@
-# Lines starting with a hashtag are comments
 # Machine information
+# Lines starting with a hashtag are comments, and will be ignored
+
 # This first block (before the separation) contains information about
 # the hardware we intend to virtualize
 # The blocks are separated by tabs
 #HARDWARE       AVAILABLE IMAGES                    USB
 usrp            gnuradio,plain,lavras,lavras2,ufv,openlte,lte,lte_version2,lte_version3,exp31,oai_epc,copa,pool       2500:0020
-#usrp           gnuradio,plain,lavras,lavras2,ufv,openlte,lte,lte_version2,lte_version3       2500:0020
-telosb          telosb                              x 
 wifi            ethanol,ubuntu16,ubuntu14,srslte,srsLTElxc,srslte2                                x
 raspberry       raspberry                           x
-telosb          machine                            x
 --------------------------------------------------------------------------------
 # The following lines contain information about the nodes on the testbed
 # 11-18 indicates the interval [11,18]
 # The value on the RAW tag indicates if the node is a VM or not
 #NODES          HARDWARE        DEFAULT IMAGES      RAW
 11-18          usrp             gnuradio            False
-60-75          telosb           machine             True
-80-87          telosb           telosb              False
-#11-15          telosb           telosb              False
-# 12              usrp            gnuradio
-# 13              usrp            gnuradio
-# 14              usrp            gnuradio
-# 15              usrp            gnuradio
-# 16              usrp            gnuradio
-# 17              usrp            gnuradio
-# 18              usrp            gnuradio
 
-#25-28        telosb          telosb              False
-# 22              telosb          telosb
-# 23              telosb          telosb
-# 24              telosb          telosb
-# 25              telosb          telosb
-# 26              telosb          telosb
-# 27              telosb          telosb
-# 28              telosb          telosb
 31-36         raspberry      raspberry           True
 38,39         raspberry      raspberry           True
 42-44         raspberry      raspberry           True
-# 32              x               raspberry
-# 33              x               raspberry
-# 34              x               raspberry
-# 35              x               raspberry
-# 36              x               raspberry
-# 37              x               raspberry
-# 38              x               raspberry
-# 39              x               raspberry
-# 40              x               raspberry
-# 41              x               raspberry
-# 42              x               raspberry
-# 43              x               raspberry
-#44              x               raspberry
-# 45              x               raspberry
-# 46              x               raspberry
 
 52-58          wifi                   ubuntu14             True
 --------------------------------------------------------------------------------
 #MACHINE NAME       IP          USER        NODES
-#VMSERVER       192.168.0.1
-rack1           192.168.1.11    futebol     11,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,80
-rack2           192.168.1.12    futebol     12,52,81
-rack3           192.168.1.13    futebol     13,53,82
-rack4           192.168.1.14    futebol     14,54,83
-rack5           192.168.1.15    futebol     15,55,84
-rack6           192.168.1.16    futebol     16,56,85
-rack7           192.168.1.17    futebol     17,57,86
-rack8           192.168.1.18    futebol     18,58,87
+rack1           192.168.0.11    futebol     11
+rack2           192.168.0.12    futebol     12,52
+rack3           192.168.0.13    futebol     13,53
+rack4           192.168.0.14    futebol     14,54
+rack5           192.168.0.15    futebol     15,55
+rack6           192.168.0.16    futebol     16,56
+rack7           192.168.0.17    futebol     17,57
+rack8           192.168.0.18    futebol     18,58
 rasp1           192.168.0.31    pi          31
 rasp2          192.168.0.32    pi          32
 rasp3           192.168.0.33    pi          33
